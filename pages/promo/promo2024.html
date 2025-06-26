@@ -1,0 +1,1015 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alumni IAI</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="../../assets/css/style.css" rel="stylesheet">
+
+    <style>
+        .nav-link.active {
+            text-decoration: underline;
+            color: #ffffff !important;
+            /* Couleur Bootstrap primaire */
+            font-weight: 500;
+        }
+
+        /* Menu déroulant personnalisé */
+        .dropdown-custom {
+            position: relative;
+            display: inline-block;
+        }
+
+        .dropdown-custom .dropdown-toggle {
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            text-decoration: none;
+            color: inherit;
+            background: none;
+            border: none;
+            padding: 0;
+            font: inherit;
+        }
+
+        .dropdown-custom .dropdown-menu {
+            display: none;
+            position: absolute;
+            left: 0;
+            top: 100%;
+            min-width: 160px;
+            background-color: #fff;
+            border: 1px solid #dee2e6;
+            border-radius: 0.25rem;
+            box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, .15);
+            z-index: 1000;
+            margin-top: 0.25rem;
+        }
+
+        .dropdown-custom:hover .dropdown-menu,
+        .dropdown-custom:focus-within .dropdown-menu {
+            display: block;
+        }
+
+        .dropdown-custom .dropdown-item {
+            padding: 0.5rem 1rem;
+            display: block;
+            color: #212529;
+            text-decoration: none;
+            background: none;
+            border: none;
+            width: 100%;
+            text-align: left;
+        }
+
+        .dropdown-custom .dropdown-item:hover {
+            background-color: #f8f9fa;
+            color: #0d6efd;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="d-flex align-items-center">
+                <img src="../../assets/img/logo.png" alt="Logo" class="logo" width="10%"
+                    style="border: 1px solid var(--jaune-clair); border-radius: 5px;">
+
+                <div class="ms-auto d-flex align-items-center">
+                    <a class="nav-link   me-3" href="../../index.html">
+                        <i class="fas fa-home me-2"></i>Accueil
+                    </a>
+                    <a class="nav-link   me-3" href="../event.html">
+                        <i class="fas fa-home me-2"></i>Evénements
+                    </a>
+                    <div class="dropdown-custom me-3">
+                        <a class="nav-link active dropdown-toggle" tabindex="0">
+                            <i class="fas fa-home me-2"></i>Promotions
+                        </a>
+                        <div class="dropdown-menu">
+                            <!-- <a class="dropdown-item" href="promo2019.html">2019</a> -->
+                            <a class="dropdown-item" href="promo2020.html">2020</a>
+                            <a class="dropdown-item" href="promo2021.html">2021</a>
+                            <a class="dropdown-item" href="promo2022.html">2022</a>
+                            <a class="dropdown-item" href="promo2024.html">2024</a>
+                        </div>
+                    </div>
+                    <a class="nav-link me-3" href="../contact.html">
+                        <i class="fas fa-home me-2"></i>Contact
+                    </a>
+
+                    <a href="form.html"><button class="btn btn-sm btn-outline-light me-2">Connexion</button></a>
+                </div>
+
+            </div>
+        </div>
+    </header>
+    <div class="container-fluid">
+        <div class="row">
+
+            <!-- Main content -->
+            <main class="col-md-12 col-lg-12 main-content">
+
+                <h1 style="color: var(--vert-sapin); text-align:center">Les Ingénieurs de Travaux informatique</h1><br>
+                <div class="row">
+                    <!-- Alumni Card 1 -->
+                    <div class="col-md-6 col-lg-4">
+                        <div class="card card-alumni">
+                            <img src="" class="card-img-top" alt="profil">
+                            <div class="card-body">
+                                <span class="badge badge-promo mb-2">Promo 2024</span>
+                                <h5 class="card-title">ELLA EMBWANG ELISEE MARVIN</h5>
+                                <p class="card-text">Développeuse Full Stack chez FEG</p>
+                                <p class="card-text"><small class="text-muted">Spécialité: Analyste Programmeur</small></p>
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Alumni Card 2 -->
+                    <div class="col-md-6 col-lg-4">
+                        <div class="card card-alumni">
+                            <img src="https://via.placeholder.com/300x180?text=Alumni+2" class="card-img-top"
+                                alt="profil">
+                            <div class="card-body">
+                                <span class="badge badge-promo mb-2">Promo 2024</span>
+                                <h5 class="card-title">CISSAKO ALI</h5>
+                                <p class="card-text">CTO chez StartupInnov</p>
+                                <p class="card-text"><small class="text-muted">Spécialité: Analyste Programmeur</small></p>
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Alumni Card 3 -->
+                    <div class="col-md-6 col-lg-4">
+                        <div class="card card-alumni">
+                            <img src="https://via.placeholder.com/300x180?text=Alumni+3" class="card-img-top"
+                                alt="profil">
+                            <div class="card-body">
+                                <span class="badge badge-promo mb-2">Promo 2024</span>
+                                <h5 class="card-title">BIDZOE ANGOUE MARIO GOSHE</h5>
+                                <p class="card-text">Product Manager chez DigitalSolutions</p>
+                                <p class="card-text"><small class="text-muted">Spécialité: Data Science</small></p>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <!-- Alumni Card 1 -->
+                    <div class="col-md-6 col-lg-4">
+                        <div class="card card-alumni">
+                            <img src="  " class="card-img-top" alt="profil">
+                            <div class="card-body">
+                                <span class="badge badge-promo mb-2">Promo 2024</span>
+                                <h5 class="card-title">BIBANG MEYE WARREN GABRIEL</h5>
+                                <p class="card-text">Développeuse Full Stack chez TechCorp</p>
+                                <p class="card-text"><small class="text-muted">Spécialité: Analyste Programmeur 
+                                        </small></p>
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Alumni Card 2 -->
+                    <div class="col-md-6 col-lg-4">
+                        <div class="card card-alumni">
+                            <img src="https://via.placeholder.com/300x180?text=Alumni+2" class="card-img-top"
+                                alt="profil">
+                            <div class="card-body">
+                                <span class="badge badge-promo mb-2">Promo 2024</span>
+                                <h5 class="card-title">ABESSOLO QUEEN EUNICE-MERVEILLE</h5>
+                                <p class="card-text">CTO chez StartupInnov</p>
+                                <p class="card-text"><small class="text-muted">Spécialité: Analyste Programmeur </small></p>
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Alumni Card 3 -->
+                    <div class="col-md-6 col-lg-4">
+                        <div class="card card-alumni">
+                            <img src="https://via.placeholder.com/300x180?text=Alumni+3" class="card-img-top"
+                                alt="profil">
+                            <div class="card-body">
+                                <span class="badge badge-promo mb-2">Promo 2024</span>
+                                <h5 class="card-title">ABESSOLO PRECIEUSE GABRIELLA</h5>
+                                <p class="card-text">Product Manager chez DigitalSolutions</p>
+                                <p class="card-text"><small class="text-muted">Spécialité: Analyste Programmeur</small></p>
+
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Alumni Card 3 -->
+                    <div class="col-md-6 col-lg-4">
+                        <div class="card card-alumni">
+                            <img src="https://via.placeholder.com/300x180?text=Alumni+3" class="card-img-top"
+                                alt="profil">
+                            <div class="card-body">
+                                <span class="badge badge-promo mb-2">Promo 2024</span>
+                                <h5 class="card-title">ESSONO ESSELE MANUEL KARL VERLYN</h5>
+                                <p class="card-text">Product Manager chez DigitalSolutions</p>
+                                <p class="card-text"><small class="text-muted">Spécialité: Analyste Programmeur</small></p>
+
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Alumni Card 3 -->
+                    <div class="col-md-6 col-lg-4">
+                        <div class="card card-alumni">
+                            <img src="https://via.placeholder.com/300x180?text=Alumni+3" class="card-img-top"
+                                alt="profil">
+                            <div class="card-body">
+                                <span class="badge badge-promo mb-2">Promo 2024</span>
+                                <h5 class="card-title">FOUTY TARYL-JAKSON</h5>
+                                <p class="card-text">Product Manager chez DigitalSolutions</p>
+                                <p class="card-text"><small class="text-muted">Spécialité: Analyste Programmeur</small></p>
+
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Alumni Card 3 -->
+                    <div class="col-md-6 col-lg-4">
+                        <div class="card card-alumni">
+                            <img src="https://via.placeholder.com/300x180?text=Alumni+3" class="card-img-top"
+                                alt="profil">
+                            <div class="card-body">
+                                <span class="badge badge-promo mb-2">Promo 2024</span>
+                                <h5 class="card-title">GUIFO KOUAM MENRI DAVID</h5>
+                                <p class="card-text">Product Manager chez DigitalSolutions</p>
+                                <p class="card-text"><small class="text-muted">Spécialité: Analyste Programmeur</small></p>
+
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Alumni Card 3 -->
+                    <div class="col-md-6 col-lg-4">
+                        <div class="card card-alumni">
+                            <img src="https://via.placeholder.com/300x180?text=Alumni+3" class="card-img-top"
+                                alt="profil">
+                            <div class="card-body">
+                                <span class="badge badge-promo mb-2">Promo 2024</span>
+                                <h5 class="card-title">IBANDOU PATRICK </h5>
+                                <p class="card-text">Product Manager chez DigitalSolutions</p>
+                                <p class="card-text"><small class="text-muted">Spécialité: Analyste Programmeur</small></p>
+
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Alumni Card 3 -->
+                    <div class="col-md-6 col-lg-4">
+                        <div class="card card-alumni">
+                            <img src="https://via.placeholder.com/300x180?text=Alumni+3" class="card-img-top"
+                                alt="profil">
+                            <div class="card-body">
+                                <span class="badge badge-promo mb-2">Promo 2024</span>
+                                <h5 class="card-title">ISHAC OMAR</h5>
+                                <p class="card-text">Product Manager chez DigitalSolutions</p>
+                                <p class="card-text"><small class="text-muted">Spécialité: Analyste Programmeur</small></p>
+
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Alumni Card 3 -->
+                    <div class="col-md-6 col-lg-4">
+                        <div class="card card-alumni">
+                            <img src="https://via.placeholder.com/300x180?text=Alumni+3" class="card-img-top"
+                                alt="profil">
+                            <div class="card-body">
+                                <span class="badge badge-promo mb-2">Promo 2024</span>
+                                <h5 class="card-title">LETEBEGUE LEMBILI TONNY JOHN BRONNY</h5>
+                                <p class="card-text">Product Manager chez DigitalSolutions</p>
+                                <p class="card-text"><small class="text-muted">Spécialité: Analyste Programmeur</small></p>
+
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Alumni Card 3 -->
+                    <div class="col-md-6 col-lg-4">
+                        <div class="card card-alumni">
+                            <img src="https://via.placeholder.com/300x180?text=Alumni+3" class="card-img-top"
+                                alt="profil">
+                            <div class="card-body">
+                                <span class="badge badge-promo mb-2">Promo 2024</span>
+                                <h5 class="card-title">MABIDI VALDY STEVEN</h5>
+                                <p class="card-text">Product Manager chez DigitalSolutions</p>
+                                <p class="card-text"><small class="text-muted">Spécialité: Analyste Programmeur</small></p>
+
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Alumni Card 3 -->
+                    <div class="col-md-6 col-lg-4">
+                        <div class="card card-alumni">
+                            <img src="https://via.placeholder.com/300x180?text=Alumni+3" class="card-img-top"
+                                alt="profil">
+                            <div class="card-body">
+                                <span class="badge badge-promo mb-2">Promo 2024</span>
+                                <h5 class="card-title">MADOUMA MADOUMA RUICK SLAUTHER</h5>
+                                <p class="card-text">Product Manager chez DigitalSolutions</p>
+                                <p class="card-text"><small class="text-muted">Spécialité: Analyste Programmeur</small></p>
+
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Alumni Card 3 -->
+                    <div class="col-md-6 col-lg-4">
+                        <div class="card card-alumni">
+                            <img src="https://via.placeholder.com/300x180?text=Alumni+3" class="card-img-top"
+                                alt="profil">
+                            <div class="card-body">
+                                <span class="badge badge-promo mb-2">Promo 2024</span>
+                                <h5 class="card-title">MALONDA MBINZA TESIE ALICIA</h5>
+                                <p class="card-text">Product Manager chez DigitalSolutions</p>
+                                <p class="card-text"><small class="text-muted">Spécialité: Analyste Programmeur</small></p>
+
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Alumni Card 3 -->
+                    <div class="col-md-6 col-lg-4">
+                        <div class="card card-alumni">
+                            <img src="https://via.placeholder.com/300x180?text=Alumni+3" class="card-img-top"
+                                alt="profil">
+                            <div class="card-body">
+                                <span class="badge badge-promo mb-2">Promo 2024</span>
+                                <h5 class="card-title">MAPOLA EBO'O TATIANA</h5>
+                                <p class="card-text">Product Manager chez DigitalSolutions</p>
+                                <p class="card-text"><small class="text-muted">Spécialité: Analyste Programmeur</small></p>
+
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Alumni Card 3 -->
+                    <div class="col-md-6 col-lg-4">
+                        <div class="card card-alumni">
+                            <img src="https://via.placeholder.com/300x180?text=Alumni+3" class="card-img-top"
+                                alt="profil">
+                            <div class="card-body">
+                                <span class="badge badge-promo mb-2">Promo 2024</span>
+                                <h5 class="card-title">MBENGON NOTOUTOUME OCTAVIE</h5>
+                                <p class="card-text">Product Manager chez DigitalSolutions</p>
+                                <p class="card-text"><small class="text-muted">Spécialité: Analyste Programmeur</small></p>
+
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Alumni Card 3 -->
+                    <div class="col-md-6 col-lg-4">
+                        <div class="card card-alumni">
+                            <img src="https://via.placeholder.com/300x180?text=Alumni+3" class="card-img-top"
+                                alt="profil">
+                            <div class="card-body">
+                                <span class="badge badge-promo mb-2">Promo 2024</span>
+                                <h5 class="card-title">MBINA MOUSSAVOU JEANINE LOÏCA</h5>
+                                <p class="card-text">Product Manager chez DigitalSolutions</p>
+                                <p class="card-text"><small class="text-muted">Spécialité: Analyste Programmeur</small></p>
+
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Alumni Card 3 -->
+                    <div class="col-md-6 col-lg-4">
+                        <div class="card card-alumni">
+                            <img src="https://via.placeholder.com/300x180?text=Alumni+3" class="card-img-top"
+                                alt="profil">
+                            <div class="card-body">
+                                <span class="badge badge-promo mb-2">Promo 2024</span>
+                                <h5 class="card-title">MBOUMBA KOUMBA JEFFREY VITAL</h5>
+                                <p class="card-text">Product Manager chez DigitalSolutions</p>
+                                <p class="card-text"><small class="text-muted">Spécialité: Analyste Programmeur</small></p>
+
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Alumni Card 3 -->
+                    <div class="col-md-6 col-lg-4">
+                        <div class="card card-alumni">
+                            <img src="https://via.placeholder.com/300x180?text=Alumni+3" class="card-img-top"
+                                alt="profil">
+                            <div class="card-body">
+                                <span class="badge badge-promo mb-2">Promo 2024</span>
+                                <h5 class="card-title">MEKOSSA NGOMBAME ERICA SIMONE</h5>
+                                <p class="card-text">Product Manager chez DigitalSolutions</p>
+                                <p class="card-text"><small class="text-muted">Spécialité: Analyste Programmeur</small></p>
+
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Alumni Card 3 -->
+                    <div class="col-md-6 col-lg-4">
+                        <div class="card card-alumni">
+                            <img src="https://via.placeholder.com/300x180?text=Alumni+3" class="card-img-top"
+                                alt="profil">
+                            <div class="card-body">
+                                <span class="badge badge-promo mb-2">Promo 2024</span>
+                                <h5 class="card-title">MENDAME EYA DIEUDONNE</h5>
+                                <p class="card-text">Product Manager chez DigitalSolutions</p>
+                                <p class="card-text"><small class="text-muted">Spécialité: Analyste Programmeur</small></p>
+
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Alumni Card 3 -->
+                    <div class="col-md-6 col-lg-4">
+                        <div class="card card-alumni">
+                            <img src="https://via.placeholder.com/300x180?text=Alumni+3" class="card-img-top"
+                                alt="profil">
+                            <div class="card-body">
+                                <span class="badge badge-promo mb-2">Promo 2024</span>
+                                <h5 class="card-title">MOHAMED SEYDOU HASSANE</h5>
+                                <p class="card-text">Product Manager chez DigitalSolutions</p>
+                                <p class="card-text"><small class="text-muted">Spécialité: Analyste Programmeur</small></p>
+
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Alumni Card 3 -->
+                    <div class="col-md-6 col-lg-4">
+                        <div class="card card-alumni">
+                            <img src="https://via.placeholder.com/300x180?text=Alumni+3" class="card-img-top"
+                                alt="profil">
+                            <div class="card-body">
+                                <span class="badge badge-promo mb-2">Promo 2024</span>
+                                <h5 class="card-title">MONDO MWEYI THIERCELLIN DAREL</h5>
+                                <p class="card-text">Product Manager chez DigitalSolutions</p>
+                                <p class="card-text"><small class="text-muted">Spécialité: Analyste Programmeur</small></p>
+
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Alumni Card 3 -->
+                    <div class="col-md-6 col-lg-4">
+                        <div class="card card-alumni">
+                            <img src="https://via.placeholder.com/300x180?text=Alumni+3" class="card-img-top"
+                                alt="profil">
+                            <div class="card-body">
+                                <span class="badge badge-promo mb-2">Promo 2024</span>
+                                <h5 class="card-title">MONGO MBANDJIKO GRACE KEVINE</h5>
+                                <p class="card-text">Product Manager chez DigitalSolutions</p>
+                                <p class="card-text"><small class="text-muted">Spécialité: Analyste Programmeur</small></p>
+
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Alumni Card 3 -->
+                    <div class="col-md-6 col-lg-4">
+                        <div class="card card-alumni">
+                            <img src="https://via.placeholder.com/300x180?text=Alumni+3" class="card-img-top"
+                                alt="profil">
+                            <div class="card-body">
+                                <span class="badge badge-promo mb-2">Promo 2024</span>
+                                <h5 class="card-title">MOUELET MINDILA ANGE-PROPHETIQUE</h5>
+                                <p class="card-text">Product Manager chez DigitalSolutions</p>
+                                <p class="card-text"><small class="text-muted">Spécialité: Analyste Programmeur</small></p>
+
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Alumni Card 3 -->
+                    <div class="col-md-6 col-lg-4">
+                        <div class="card card-alumni">
+                            <img src="https://via.placeholder.com/300x180?text=Alumni+3" class="card-img-top"
+                                alt="profil">
+                            <div class="card-body">
+                                <span class="badge badge-promo mb-2">Promo 2024</span>
+                                <h5 class="card-title">MOUEMBA PAUL JEUSTH</h5>
+                                <p class="card-text">Product Manager chez DigitalSolutions</p>
+                                <p class="card-text"><small class="text-muted">Spécialité: Analyste Programmeur</small></p>
+
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Alumni Card 3 -->
+                    <div class="col-md-6 col-lg-4">
+                        <div class="card card-alumni">
+                            <img src="https://via.placeholder.com/300x180?text=Alumni+3" class="card-img-top"
+                                alt="profil">
+                            <div class="card-body">
+                                <span class="badge badge-promo mb-2">Promo 2024</span>
+                                <h5 class="card-title">MOUNNGALA GHOMBY EVEN'S RICK</h5>
+                                <p class="card-text">Product Manager chez DigitalSolutions</p>
+                                <p class="card-text"><small class="text-muted">Spécialité: Analyste Programmeur</small></p>
+
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Alumni Card 3 -->
+                    <div class="col-md-6 col-lg-4">
+                        <div class="card card-alumni">
+                            <img src="https://via.placeholder.com/300x180?text=Alumni+3" class="card-img-top"
+                                alt="profil">
+                            <div class="card-body">
+                                <span class="badge badge-promo mb-2">Promo 2024</span>
+                                <h5 class="card-title">MOUSSAVOU MDEMBI</h5>
+                                <p class="card-text">Product Manager chez DigitalSolutions</p>
+                                <p class="card-text"><small class="text-muted">Spécialité: Analyste Programmeur</small></p>
+
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Alumni Card 3 -->
+                    <div class="col-md-6 col-lg-4">
+                        <div class="card card-alumni">
+                            <img src="https://via.placeholder.com/300x180?text=Alumni+3" class="card-img-top"
+                                alt="profil">
+                            <div class="card-body">
+                                <span class="badge badge-promo mb-2">Promo 2024</span>
+                                <h5 class="card-title">NANG NANG YORICK MONEY</h5>
+                                <p class="card-text">Product Manager chez DigitalSolutions</p>
+                                <p class="card-text"><small class="text-muted">Spécialité: Analyste Programmeur</small></p>
+
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Alumni Card 3 -->
+                    <div class="col-md-6 col-lg-4">
+                        <div class="card card-alumni">
+                            <img src="https://via.placeholder.com/300x180?text=Alumni+3" class="card-img-top"
+                                alt="profil">
+                            <div class="card-body">
+                                <span class="badge badge-promo mb-2">Promo 2024</span>
+                                <h5 class="card-title">NGOUBILI CHRIST ANDERSON</h5>
+                                <p class="card-text">Product Manager chez DigitalSolutions</p>
+                                <p class="card-text"><small class="text-muted">Spécialité: Analyste Programmeur</small></p>
+
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Alumni Card 3 -->
+                    <div class="col-md-6 col-lg-4">
+                        <div class="card card-alumni">
+                            <img src="https://via.placeholder.com/300x180?text=Alumni+3" class="card-img-top"
+                                alt="profil">
+                            <div class="card-body">
+                                <span class="badge badge-promo mb-2">Promo 2024</span>
+                                <h5 class="card-title">NGUEMA MENIE RUDDY MARTIN</h5>
+                                <p class="card-text">Product Manager chez DigitalSolutions</p>
+                                <p class="card-text"><small class="text-muted">Spécialité: Analyste Programmeur</small></p>
+
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Alumni Card 3 -->
+                    <div class="col-md-6 col-lg-4">
+                        <div class="card card-alumni">
+                            <img src="https://via.placeholder.com/300x180?text=Alumni+3" class="card-img-top"
+                                alt="profil">
+                            <div class="card-body">
+                                <span class="badge badge-promo mb-2">Promo 2024</span>
+                                <h5 class="card-title">NZENGE MWELE JEREMY AMEY GELAS</h5>
+                                <p class="card-text">Product Manager chez DigitalSolutions</p>
+                                <p class="card-text"><small class="text-muted">Spécialité: Analyste Programmeur</small></p>
+
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Alumni Card 3 -->
+                    <div class="col-md-6 col-lg-4">
+                        <div class="card card-alumni">
+                            <img src="https://via.placeholder.com/300x180?text=Alumni+3" class="card-img-top"
+                                alt="profil">
+                            <div class="card-body">
+                                <span class="badge badge-promo mb-2">Promo 2024</span>
+                                <h5 class="card-title">ONDO AKONO EZER SIDNEY</h5>
+                                <p class="card-text">Product Manager chez DigitalSolutions</p>
+                                <p class="card-text"><small class="text-muted">Spécialité: Analyste Programmeur</small></p>
+
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Alumni Card 3 -->
+                    <div class="col-md-6 col-lg-4">
+                        <div class="card card-alumni">
+                            <img src="https://via.placeholder.com/300x180?text=Alumni+3" class="card-img-top"
+                                alt="profil">
+                            <div class="card-body">
+                                <span class="badge badge-promo mb-2">Promo 2024</span>
+                                <h5 class="card-title">OUBALA TEVINE JOËL</h5>
+                                <p class="card-text">Product Manager chez DigitalSolutions</p>
+                                <p class="card-text"><small class="text-muted">Spécialité: Analyste Programmeur</small></p>
+
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Alumni Card 3 -->
+                    <div class="col-md-6 col-lg-4">
+                        <div class="card card-alumni">
+                            <img src="https://via.placeholder.com/300x180?text=Alumni+3" class="card-img-top"
+                                alt="profil">
+                            <div class="card-body">
+                                <span class="badge badge-promo mb-2">Promo 2024</span>
+                                <h5 class="card-title">SOW DJAMILATOU</h5>
+                                <p class="card-text">Product Manager chez DigitalSolutions</p>
+                                <p class="card-text"><small class="text-muted">Spécialité: Analyste Programmeur</small></p>
+
+                            </div>
+                        </div>
+                    </div>
+                </div><br><br>
+                <h1 style="color: var(--vert-sapin); text-align:center">Les Ingénieurs de Conception
+                </h1><br>
+                <div class="row">
+                    
+                    <!-- Alumni Card 1 -->
+                    <div class="col-md-6 col-lg-4">
+                        <div class="card card-alumni">
+                            <img src="" class="card-img-top" alt="profil">
+                            <div class="card-body">
+                                <span class="badge badge-promo mb-2">Promo 2024</span>
+                                <h5 class="card-title">ADAMOU YOUSSOUF</h5>
+                                <p class="card-text">Développeuse Full Stack chez FEG</p>
+                                <p class="card-text"><small class="text-muted">Spécialité: Cybersécurité</small></p>
+
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Alumni Card 1 -->
+                    <div class="col-md-6 col-lg-4">
+                        <div class="card card-alumni">
+                            <img src="" class="card-img-top" alt="profil">
+                            <div class="card-body">
+                                <span class="badge badge-promo mb-2">Promo 2024</span>
+                                <h5 class="card-title">APEDOH KOSSI KAKELI</h5>
+                                <p class="card-text">Développeuse Full Stack chez FEG</p>
+                                <p class="card-text"><small class="text-muted">Spécialité: Cybersécurité</small></p>
+
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Alumni Card 1 -->
+                    <div class="col-md-6 col-lg-4">
+                        <div class="card card-alumni">
+                            <img src="" class="card-img-top" alt="profil">
+                            <div class="card-body">
+                                <span class="badge badge-promo mb-2">Promo 2024</span>
+                                <h5 class="card-title">BAMBO LE BONHEUR</h5>
+                                <p class="card-text">Développeuse Full Stack chez FEG</p>
+                                <p class="card-text"><small class="text-muted">Spécialité: Cybersécurité</small></p>
+
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Alumni Card 1 -->
+                    <div class="col-md-6 col-lg-4">
+                        <div class="card card-alumni">
+                            <img src="" class="card-img-top" alt="profil">
+                            <div class="card-body">
+                                <span class="badge badge-promo mb-2">Promo 2024</span>
+                                <h5 class="card-title">BARESSY SAMUELLE JAMILLA</h5>
+                                <p class="card-text">Développeuse Full Stack chez FEG</p>
+                                <p class="card-text"><small class="text-muted">Spécialité: Cybersécurité</small></p>
+
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Alumni Card 1 -->
+                    <div class="col-md-6 col-lg-4">
+                        <div class="card card-alumni">
+                            <img src="" class="card-img-top" alt="profil">
+                            <div class="card-body">
+                                <span class="badge badge-promo mb-2">Promo 2024</span>
+                                <h5 class="card-title">BOUMBANGA WOMBO BRANDON WARREN</h5>
+                                <p class="card-text">Développeuse Full Stack chez FEG</p>
+                                <p class="card-text"><small class="text-muted">Spécialité: Cybersécurité</small></p>
+
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Alumni Card 1 -->
+                    <div class="col-md-6 col-lg-4">
+                        <div class="card card-alumni">
+                            <img src="" class="card-img-top" alt="profil">
+                            <div class="card-body">
+                                <span class="badge badge-promo mb-2">Promo 2024</span>
+                                <h5 class="card-title">DANSOU KOFFI JUNIOR</h5>
+                                <p class="card-text">Développeuse Full Stack chez FEG</p>
+                                <p class="card-text"><small class="text-muted">Spécialité: Cybersécurité</small></p>
+
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Alumni Card 1 -->
+                    <div class="col-md-6 col-lg-4">
+                        <div class="card card-alumni">
+                            <img src="" class="card-img-top" alt="profil">
+                            <div class="card-body">
+                                <span class="badge badge-promo mb-2">Promo 2024</span>
+                                <h5 class="card-title">DOUTHE THIERNO DAVID</h5>
+                                <p class="card-text">Développeuse Full Stack chez FEG</p>
+                                <p class="card-text"><small class="text-muted">Spécialité: Cybersécurité</small></p>
+
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Alumni Card 1 -->
+                    <div class="col-md-6 col-lg-4">
+                        <div class="card card-alumni">
+                            <img src="" class="card-img-top" alt="profil">
+                            <div class="card-body">
+                                <span class="badge badge-promo mb-2">Promo 2024</span>
+                                <h5 class="card-title">EKOME EKOME ELI THALES</h5>
+                                <p class="card-text">Développeuse Full Stack chez FEG</p>
+                                <p class="card-text"><small class="text-muted">Spécialité: Cybersécurité</small></p>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4">
+                        <div class="card card-alumni">
+                            <img src="../../assets/img/moi.jpg" class="card-img-top" alt="profil">
+                            <div class="card-body">
+                                <span class="badge badge-promo mb-2">Promo 2021</span>
+                                <h5 class="card-title">Fatou Hassane</h5>
+                                <p class="card-text">Développeuse Full Stack chez FEG</p>
+                                <p class="card-text"><small class="text-muted">Spécialité: Cybersécurité</small></p>
+                                <a href="pages/form.html"><button class="btn btn-sm btn-outline-black me-2">Voir plus</button></a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Alumni Card 1 -->
+                    <div class="col-md-6 col-lg-4">
+                        <div class="card card-alumni">
+                            <img src="" class="card-img-top" alt="profil">
+                            <div class="card-body">
+                                <span class="badge badge-promo mb-2">Promo 2024</span>
+                                <h5 class="card-title">FOTSI TAKAM</h5>
+                                <p class="card-text">Développeuse Full Stack chez FEG</p>
+                                <p class="card-text"><small class="text-muted">Spécialité: Cybersécurité</small></p>
+
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Alumni Card 1 -->
+                    <div class="col-md-6 col-lg-4">
+                        <div class="card card-alumni">
+                            <img src="" class="card-img-top" alt="profil">
+                            <div class="card-body">
+                                <span class="badge badge-promo mb-2">Promo 2024</span>
+                                <h5 class="card-title">GREKOVOUNBO THIBAULT</h5>
+                                <p class="card-text">Développeuse Full Stack chez FEG</p>
+                                <p class="card-text"><small class="text-muted">Spécialité: Cybersécurité</small></p>
+
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Alumni Card 1 -->
+                    <div class="col-md-6 col-lg-4">
+                        <div class="card card-alumni">
+                            <img src="" class="card-img-top" alt="profil">
+                            <div class="card-body">
+                                <span class="badge badge-promo mb-2">Promo 2024</span>
+                                <h5 class="card-title">HYACINTH MAKOBAYE</h5>
+                                <p class="card-text">Développeuse Full Stack chez FEG</p>
+                                <p class="card-text"><small class="text-muted">Spécialité: Cybersécurité</small></p>
+
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Alumni Card 1 -->
+                    <div class="col-md-6 col-lg-4">
+                        <div class="card card-alumni">
+                            <img src="" class="card-img-top" alt="profil">
+                            <div class="card-body">
+                                <span class="badge badge-promo mb-2">Promo 2024</span>
+                                <h5 class="card-title">ILOUMBOU ROLAND JUNIOR</h5>
+                                <p class="card-text">Développeuse Full Stack chez FEG</p>
+                                <p class="card-text"><small class="text-muted">Spécialité: Cybersécurité</small></p>
+
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Alumni Card 1 -->
+                    <div class="col-md-6 col-lg-4">
+                        <div class="card card-alumni">
+                            <img src="" class="card-img-top" alt="profil">
+                            <div class="card-body">
+                                <span class="badge badge-promo mb-2">Promo 2024</span>
+                                <h5 class="card-title">ISSAMBOU JEAN SAMUEL</h5>
+                                <p class="card-text">Développeuse Full Stack chez FEG</p>
+                                <p class="card-text"><small class="text-muted">Spécialité: Cybersécurité</small></p>
+
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Alumni Card 1 -->
+                    <div class="col-md-6 col-lg-4">
+                        <div class="card card-alumni">
+                            <img src="" class="card-img-top" alt="profil">
+                            <div class="card-body">
+                                <span class="badge badge-promo mb-2">Promo 2024</span>
+                                <h5 class="card-title">KASSA KASSA MICHHEL</h5>
+                                <p class="card-text">Développeuse Full Stack chez FEG</p>
+                                <p class="card-text"><small class="text-muted">Spécialité: Cybersécurité</small></p>
+
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Alumni Card 1 -->
+                    <div class="col-md-6 col-lg-4">
+                        <div class="card card-alumni">
+                            <img src="" class="card-img-top" alt="profil">
+                            <div class="card-body">
+                                <span class="badge badge-promo mb-2">Promo 2024</span>
+                                <h5 class="card-title">LEKOUMBA ROBIN LEMEC</h5>
+                                <p class="card-text">Développeuse Full Stack chez FEG</p>
+                                <p class="card-text"><small class="text-muted">Spécialité: Cybersécurité</small></p>
+
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Alumni Card 1 -->
+                    <div class="col-md-6 col-lg-4">
+                        <div class="card card-alumni">
+                            <img src="" class="card-img-top" alt="profil">
+                            <div class="card-body">
+                                <span class="badge badge-promo mb-2">Promo 2024</span>
+                                <h5 class="card-title">MBA ONDO DIEUDONNE</h5>
+                                <p class="card-text">Développeuse Full Stack chez FEG</p>
+                                <p class="card-text"><small class="text-muted">Spécialité: Cybersécurité</small></p>
+
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Alumni Card 1 -->
+                    <div class="col-md-6 col-lg-4">
+                        <div class="card card-alumni">
+                            <img src=" ../../assets/img/dbm.jpg " class="card-img-top" alt="profil">
+                            <div class="card-body">
+                                <span class="badge badge-promo mb-2">Promo 2024</span>
+                                <h5 class="card-title">MEGNE MENGUE DOUGUY-BLAISE</h5>
+                                <p class="card-text">Développeuse Full Stack chez FEG</p>
+                                <p class="card-text"><small class="text-muted">Spécialité: Cybersécurité</small></p>
+<a href="https://github.com/MEGNEDOUGUY-BLAISE/DBM-Portfolio-.git"><button class="btn btn-sm btn-outline-black me-2">Voir plus</button></a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Alumni Card 1 -->
+                    <div class="col-md-6 col-lg-4">
+                        <div class="card card-alumni">
+                            <img src="" class="card-img-top" alt="profil">
+                            <div class="card-body">
+                                <span class="badge badge-promo mb-2">Promo 2024</span>
+                                <h5 class="card-title">N'NANG ELLA ALPHONSE YVES</h5>
+                                <p class="card-text">Développeuse Full Stack chez FEG</p>
+                                <p class="card-text"><small class="text-muted">Spécialité: Cybersécurité</small></p>
+
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Alumni Card 1 -->
+                    <div class="col-md-6 col-lg-4">
+                        <div class="card card-alumni">
+                            <img src="" class="card-img-top" alt="profil">
+                            <div class="card-body">
+                                <span class="badge badge-promo mb-2">Promo 2024</span>
+                                <h5 class="card-title">NZE BILOGUE EMMANUEL SAVIOLA</h5>
+                                <p class="card-text">Développeuse Full Stack chez FEG</p>
+                                <p class="card-text"><small class="text-muted">Spécialité: Cybersécurité</small></p>
+
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Alumni Card 1 -->
+                    <div class="col-md-6 col-lg-4">
+                        <div class="card card-alumni">
+                            <img src="" class="card-img-top" alt="profil">
+                            <div class="card-body">
+                                <span class="badge badge-promo mb-2">Promo 2024</span>
+                                <h5 class="card-title">WILSON BAHUN ADJEVI MAWOUGNON</h5>
+                                <p class="card-text">Développeuse Full Stack chez FEG</p>
+                                <p class="card-text"><small class="text-muted">Spécialité: Cybersécurité</small></p>
+
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Alumni Card 1 -->
+                    <div class="col-md-6 col-lg-4">
+                        <div class="card card-alumni">
+                            <img src="../../assets/img/caleb2.jpg" class="card-img-top" alt="profil">
+                            <div class="card-body" >
+                                <span class="badge badge-promo mb-2">Promo 2024</span>
+                                <h5 class="card-title">YEZENGOYE MATOUKA CALEB</h5>
+                                <p class="card-text">Développeuse Full Stack chez FEG</p>
+                                <p class="card-text"><small class="text-muted">Spécialité: Cybersécurité</small></p>
+<a href="https://willowy-manatee-c63e0f.netlify.app/"><button class="btn btn-sm btn-outline-black me-2">Voir plus</button></a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Alumni Card 1 -->
+                    <div class="col-md-6 col-lg-4">
+                        <div class="card card-alumni">
+                            <img src="" class="card-img-top" alt="profil">
+                            <div class="card-body">
+                                <span class="badge badge-promo mb-2">Promo 2024</span>
+                                <h5 class="card-title">YOMBI DESCARTES IDIANO</h5>
+                                <p class="card-text">Développeuse Full Stack chez FEG</p>
+                                <p class="card-text"><small class="text-muted">Spécialité: Cybersécurité</small></p>
+
+                            </div>
+                        </div>
+                    </div><br><br>
+                    <h1 style="color: var(--vert-sapin); text-align:center">MIAGE 1 , promotion Diamond
+                    </h1><br>
+                    <div class="row">  
+
+                   <!-- Alumni Card 1 -->
+                    <div class="col-md-6 col-lg-4">
+                        <div class="card card-alumni">
+                            <img src="" class="card-img-top" alt="profil">
+                            <div class="card-body">
+                                <span class="badge badge-promo mb-2">Promo 2024</span>
+                                <h5 class="card-title">ANDEME MEYE GISELE CHERONE</h5>
+                                <p class="card-text">Développeuse Full Stack chez FEG</p>
+                                <p class="card-text"><small class="text-muted">Spécialité: Data Science</small></p>
+
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Alumni Card 1 -->
+                    <div class="col-md-6 col-lg-4">
+                        <div class="card card-alumni">
+                            <img src="" class="card-img-top" alt="profil">
+                            <div class="card-body">
+                                <span class="badge badge-promo mb-2">Promo 2024</span>
+                                <h5 class="card-title">EYA'A BIYOGHE NORWEN GEOFFREY</h5>
+                                <p class="card-text">Développeuse Full Stack chez FEG</p>
+                                <p class="card-text"><small class="text-muted">Spécialité: Big Data</small></p>
+
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Alumni Card 1 -->
+                    <div class="col-md-6 col-lg-4">
+                        <div class="card card-alumni">
+                            <img src="" class="card-img-top" alt="profil">
+                            <div class="card-body">
+                                <span class="badge badge-promo mb-2">Promo 2024</span>
+                                <h5 class="card-title">MAHANGA MBOUMBA CELLY JARMATHE </h5>
+                                <p class="card-text">Développeuse Full Stack chez FEG</p>
+                                <p class="card-text"><small class="text-muted">Spécialité: Big Data </small></p>
+
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Alumni Card 1 -->
+                    <div class="col-md-6 col-lg-4">
+                        <div class="card card-alumni">
+                            <img src="" class="card-img-top" alt="profil">
+                            <div class="card-body">
+                                <span class="badge badge-promo mb-2">Promo 2024</span>
+                                <h5 class="card-title">MBIE BEKALE ELIE LOÏC </h5>
+                                <p class="card-text">Développeuse Full Stack chez FEG</p>
+                                <p class="card-text"><small class="text-muted">Spécialité: Anlyste Data</small></p>
+
+                            </div>
+                        </div>
+                    </div>
+                   
+                    
+            </main>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer" style="text-align: center;">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <h5>Alumni IAI</h5>
+                    <p>Le réseau des anciens étudiants de l'Institut Africain d'Informatique.</p>
+                    <p>© 2025 Tous droits réservés</p>
+                </div>
+                <div class="col-md-4 text-center">
+                    <div class="footer-links mb-3">
+                        <a href="#">Mentions légales</a>
+                        <a href="#">Confidentialité</a>
+                        <a href="#">Contact</a>
+                    </div>
+                    <div>
+                        <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="social-icon"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+                <div class="col-md-4 text-md-end">
+                    <h5>Newsletter</h5>
+                    <p>Abonnez-vous à notre newsletter</p>
+                    <div class="input-group mb-3">
+                        <input type="email" class="form-control" placeholder="Votre email">
+                        <button class="btn btn-alumni" type="button">OK</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>

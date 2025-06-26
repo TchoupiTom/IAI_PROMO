@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alumni IAI</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link href="assets/css/style.css" rel="stylesheet">
+
+    <style>
+        .nav-link.active {
+            text-decoration: underline;
+            color: #ffffff !important;
+            /* Couleur Bootstrap primaire */
+            font-weight: 500;
+        }
+
+        /* Menu déroulant personnalisé */
+        .dropdown-custom {
+            position: relative;
+            display: inline-block;
+        }
+
+        .dropdown-custom .dropdown-toggle {
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            text-decoration: none;
+            color: inherit;
+            background: none;
+            border: none;
+            padding: 0;
+            font: inherit;
+        }
+
+        .dropdown-custom .dropdown-menu {
+            display: none;
+            position: absolute;
+            left: 0;
+            top: 100%;
+            min-width: 160px;
+            background-color: #fff;
+            border: 1px solid #dee2e6;
+            border-radius: 0.25rem;
+            box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, .15);
+            z-index: 1000;
+            margin-top: 0.25rem;
+        }
+
+        .dropdown-custom:hover .dropdown-menu,
+        .dropdown-custom:focus-within .dropdown-menu {
+            display: block;
+        }
+
+        .dropdown-custom .dropdown-item {
+            padding: 0.5rem 1rem;
+            display: block;
+            color: #212529;
+            text-decoration: none;
+            background: none;
+            border: none;
+            width: 100%;
+            text-align: left;
+        }
+
+        .dropdown-custom .dropdown-item:hover {
+            background-color: #f8f9fa;
+            color: #0d6efd;
+        }
+
+        .carousel-css {
+            position: relative;
+            width: 100%;
+            max-height: 420px;
+            overflow: hidden;
+            margin-bottom: 0;
+        }
+
+        .carousel-css .slides {
+            display: flex;
+            width: 100%;
+            animation: slideAnim 12s infinite;
+        }
+
+        .carousel-css .slide {
+            width: 100%;
+            flex-shrink: 0;
+            position: relative;
+        }
+
+        .carousel-css img {
+            width: 100%;
+            height: 420px;
+            object-fit: cover;
+            display: block;
+        }
+
+        @keyframes slideAnim {
+            0% {
+                transform: translateX(0%);
+            }
+
+            25% {
+                transform: translateX(0%);
+            }
+
+            33% {
+                transform: translateX(-100%);
+            }
+
+            58% {
+                transform: translateX(-100%);
+            }
+
+            66% {
+                transform: translateX(-200%);
+            }
+
+            91% {
+                transform: translateX(-200%);
+            }
+
+            100% {
+                transform: translateX(0%);
+            }
+        }
+
+        .carousel-caption-css {
+            position: absolute;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: rgba(0, 0, 0, 0.45);
+            border-radius: 8px 8px 0 0;
+            padding: 2rem 2.5rem 1.5rem 2.5rem;
+            color: #fff;
+            text-align: left;
+        }
+
+        .carousel-caption-css h1 {
+            font-size: 2.2rem;
+            font-weight: bold;
+        }
+
+        .carousel-caption-css p {
+            font-size: 1.1rem;
+        }
+
+        .carousel-caption-css .btn {
+            background: #2E8B57;
+            border: none;
+            font-weight: 500;
+            color: #fff;
+            margin-top: 1rem;
+        }
+
+        .carousel-caption-css .btn:hover {
+            background: #2E8B57;
+        }
+
+        .banner-bar {
+            background: #2E8B57;
+            color: #fff;
+            padding: 1rem 0.5rem;
+            text-align: center;
+            font-size: 1.1rem;
+            font-weight: 500;
+        }
+
+        .card-custom {
+            border: none;
+            border-radius: 12px;
+            box-shadow: 0 4px 16px rgba(0, 0, 0, 0.06);
+            background: #fff;
+            margin-bottom: 2rem;
+            transition: box-shadow 0.2s;
+        }
+
+        .card-custom:hover {
+            box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
+        }
+
+        .card-custom .card-icon {
+            color: #2E8B57;
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+        }
+
+        .card-custom .btn {
+            background: #2E8B57;
+            border: none;
+            font-weight: 500;
+        }
+
+        .card-custom .btn:hover {
+            background: #2E8B57;
+        }
+
+        @media (max-width: 991px) {
+            .carousel-caption-css {
+                padding: 1rem 1.2rem 1rem 1.2rem;
+            }
+
+            .carousel-caption-css h1 {
+                font-size: 1.2rem;
+            }
+
+            .carousel-css img {
+                height: 220px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="d-flex align-items-center">
+                <img src="assets/img/logo.png" alt="Logo" class="logo" width="10%"
+                    style="border: 1px solid var(--jaune-clair); border-radius: 5px;">
+
+                <div class="ms-auto d-flex align-items-center">
+                    <a class="nav-link active  me-3" href="#">
+                        Accueil
+                    </a>
+                    <a class="nav-link   me-3" href="pages/event.html">
+                        Evénements
+                    </a>
+                    <div class="dropdown-custom me-3">
+                        <a class="nav-link dropdown-toggle" tabindex="0">
+                            Promotions
+                        </a>
+                        <div class="dropdown-menu">
+                            <!-- <a class="dropdown-item" href="pages/promo/promo2019.html">2019</a> -->
+                            <a class="dropdown-item" href="pages/promo/promo2020.html">2020</a>
+                            <a class="dropdown-item" href="pages/promo/promo2021.html">2021</a>
+                            <a class="dropdown-item" href="pages/promo/promo2022.html">2022</a>
+                            <a class="dropdown-item" href="pages/promo/promo2024.html">2024</a>
+                        </div>
+                    </div>
+                    <a class="nav-link me-3" href="pages/contact.html">
+                        Contact
+                    </a>
+
+                    <a href="pages/form.html"><button class="btn btn-sm btn-outline-light me-2">Connexion</button></a>
+                </div>
+
+            </div>
+        </div>
+    </header>
+    <div class="row">
+        <div class="col-md-12 col-lg-12">
+            <h1 class="text-center mt-4" style="color: var(--vert-sapin);">Bienvenue sur le site des Alumni IAI</h1>
+            <p class="text-center">Restez connecté avec vos anciens camarades et découvrez les dernières actualités.</p>
+        </div>
+    </div>
+    <div class="container-fluid">
+        <div class="row">
+            <main class="col-md-12 col-lg-12 main-content">
+                <!-- Carousel CSS only -->
+                <div class="carousel-css">
+                    <div class="slides">
+                        <div class="slide">
+                            <img src="assets/img/WhatsApp Image 2025-06-13 à 23.04.25_0d19ffdf.jpg"
+                                alt="Event 1">
+                            <div class="carousel-caption-css">
+                                <h1>#AlumniReunion 2025: That's a wrap!</h1>
+                                <p>It was full of hugs, high-fives, and happiness. See some highlights from the weekend
+                                    or check back soon for a full recap.</p>
+                                <a href="#" class="btn btn-lg">En savoir plus</a>
+                            </div>
+                        </div>
+                        <div class="slide">
+                            <img src="assets/img/WhatsApp Image 2025-06-13 à 23.04.25_846672ae.jpg"
+                                alt="Event 2">
+                            <div class="carousel-caption-css">
+                                <h1>Rejoignez la communauté Alumni</h1>
+                                <p>Participez à nos événements, partagez vos expériences et développez votre réseau.</p>
+                                <a href="#" class="btn btn-lg">Découvrir</a>
+                            </div>
+                        </div>
+                        <div class="slide">
+                            <img src="assets/img/WhatsApp Image 2025-06-13 à 23.11.32_8e3987d0.jpg" width="10%" alt="Event 3">
+                            <div class="carousel-caption-css">
+                                <h1>Découvrez nos avantages exclusifs</h1>
+                                <p>Profitez d'offres, de services et d'opportunités réservés à nos membres.</p>
+                                <a href="#" class="btn btn-lg">Voir les avantages</a>
+                            </div>
+                        </div>
+                        
+                    </div>
+                </div>
+
+                <!-- Cards Section -->
+                <div class="container py-5">
+                    <div class="row g-4 justify-content-center">
+                        <div class="col-12 col-md-6 col-lg-4">
+                            <div class="card card-custom text-center h-100 p-4">
+                                <div class="card-icon mb-2">
+                                    <i class="fas fa-calendar-alt"></i>
+                                </div>
+                                <h5 class="card-title mb-3" style="color:#2E8B57;">Nos événements</h5>
+                                <p class="card-text mb-4">Participez, échangez et célébrez avec d'autres membres de la
+                                    communauté Alumni IAI</p>
+                                <a href="pages/event.html" class="btn btn-danger">En savoir plus</a>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-6 col-lg-4">
+                            <div class="card card-custom text-center h-100 p-4">
+                                <div class="card-icon mb-2">
+                                    <i class="fa-solid fa-graduation-cap"></i>
+                                </div>
+                                <h5 class="card-title mb-3" style="color:#2E8B57;">Promotions</h5>
+                                <p class="card-text mb-4">Découvrez la communauté Alumni IAI et ses promotions.</p>
+                                <a href="pages/promo/promo2019.html" class="btn btn-danger">En savoir plus</a>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-6 col-lg-4">
+                            <div class="card card-custom text-center h-100 p-4">
+                                <div class="card-icon mb-2">
+                                    <i class="fas fa-envelope"></i>
+                                </div>
+                                <h5 class="card-title mb-3" style="color:#2E8B57;">Contactez-nous</h5>
+                                <p class="card-text mb-4">Développez votre expérience Alumni par club, promotion,
+                                    affinité ou cause.</p>
+                                <a href="pages/contact.html" class="btn btn-danger">En savoir plus</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </main>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer" style="text-align: center;">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <h5>Alumni IAI</h5>
+                    <p>Le réseau des anciens étudiants de l'Institut Africain d'Informatique.</p>
+                    <p>© 2025 Tous droits réservés</p>
+                </div>
+                <div class="col-md-4 text-center">
+                    <div class="footer-links mb-3">
+                        <a href="#">Mentions légales</a>
+                        <a href="#">Confidentialité</a>
+                        <a href="#">Contact</a>
+                    </div>
+                    <div>
+                        <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="social-icon"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+                <div class="col-md-4 text-md-end">
+                    <h5>Newsletter</h5>
+                    <p>Abonnez-vous à notre newsletter</p>
+                    <div class="input-group mb-3">
+                        <input type="email" class="form-control" placeholder="Votre email">
+                        <button class="btn btn-alumni" type="button">OK</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
